@@ -17,28 +17,27 @@
     </header>
     <main>
         <section>
-            <h2>Chat With Us</h2>
-            <p>Click the button below to start a live chat with our support team.</p>
+            <h2>Live Chat</h2>
+            <p>Our support team is available to chat with you below.</p>
             <!-- Salesforce Messaging Widget Start -->
             <script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
-			embeddedservice_bootstrap.init(
-			'00DKj00000EAwfP',
-			'Messaging_Session',
-			'https://brookmays.my.site.com/ESWMessagingSession1753968393495',
-			{
-				scrt2URL: 'https://brookmays.my.salesforce-scrt.com'
-			}
-		);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://brookmays.my.site.com/ESWMessagingSession1753968393495/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+                function initEmbeddedMessaging() {
+                    try {
+                        embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+                        embeddedservice_bootstrap.init(
+                            '00DKj00000EAwfP',
+                            'Messaging_Session',
+                            'https://brookmays.my.site.com/ESWMessagingSession1753968393495',
+                            {
+                                scrt2URL: 'https://brookmays.my.salesforce-scrt.com'
+                            }
+                        );
+                    } catch (err) {
+                        console.error('Error loading Embedded Messaging: ', err);
+                    }
+                };
+            </script>
+            <script type='text/javascript' src='https://brookmays.my.site.com/ESWMessagingSession1753968393495/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
             <!-- Salesforce Messaging Widget End -->
             <div id="chatWidget"></div>
             <p><i>Live chat is powered by Salesforce Embedded Messaging.</i></p>
